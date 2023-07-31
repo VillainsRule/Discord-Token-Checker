@@ -4,7 +4,7 @@
   "description": "a simple & fast Discord token checker.",
   "main": "index.mjs",
   "keywords": ["discord"],
-  "author": "@iamthonk",
+  "author": "@xthonk",
   
   "dependencies": {
     "axios": "^1.4.0",
