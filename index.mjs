@@ -68,7 +68,7 @@ const check_token = (token) => {
             fs.appendFile('./output/invalid.txt', `${token}\n`, (err) => (err) ? console.log(tinycolor('magenta')(`Cannot save token to invalid file. ${err}`)) : false);
             invalid++;
         } else if (err.response.status === 403) {
-            console.log(gradient['#f0b30a', '#f0b30a'](`Token Locked :(   > `) + gradient.instagram(token));
+            console.log(gradient(['#f0b30a', '#f0b30a'])(`Token Locked :(   > `) + gradient.instagram(token));
             fs.appendFile('./output/locked.txt', `${token}\n`, (err) => (err) ? console.log(tinycolor('magenta')(`Cannot save token to locked file. ${err}`)) : false);
             locked++;
         } else console.log(gradient(['magenta', 'magenta'])(`Unknown Error with code ${err.response.status}. `) + gradient.instagram(token));
